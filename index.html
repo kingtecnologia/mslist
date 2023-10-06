@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:type" content="website">    
+    <title>Microsoft Download</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/msdl.js"></script>
+</head>
+
+<body>
+    <div id="products-list">
+        <h2>Escolha o software</h2>
+        <input id="search-products" type="search" placeholder="Pesquisar..." onInput="updateResults();">
+        <div id="quick-search">
+            📌
+            <button onClick="setSearch('Windows 8\\.1');">Windows 8.1</button>
+            <button onClick="setSearch('Windows 10 22H2');">Windows 10</button>
+            <button onClick="setSearch('Windows 11 22H2');">Windows 11</button>
+        </div>
+        <table style="table-layout: auto;">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>ID</th>
+                </tr>
+            </thead>
+            <tbody id="products-table-body"></tbody>
+        </table>
+    </div>
+
+    <div id="msdl-ms-content"></div>
+
+    <div id="msdl-please-wait">
+        <h2>Aguarde...</h2>
+        <p>Aguarde, estamos processando sua solicitação.</p>
+    </div>
+
+    <div id="msdl-processing-error">
+        <h2>Erro</h2>
+        <p>Um erro ocorreu ao processar sua solicitação. Tente novamente.</p>
+    </div>
+
+    <div id="back-to-products">
+        <hr>
+        <button onClick="backToProducts();">Voltar para a lista</button>
+    </div>
+
+    <input id="msdl-session-id" type="hidden">
+</body>
+
+</html>
