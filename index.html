@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:type" content="website">    
-    <title>Microsoft Download</title>
-    
+    <meta property="description" content="Microsoft Download">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:site_name" content="Microsoft Software Download">
+    <meta property="og:title" content="Microsoft Software Download">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Microsoft Software Download">
+    <meta property="og:image" content="/img/cover.png">
+    <title>Microsoft Software Download</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/msdl.js"></script>
@@ -13,13 +18,13 @@
 
 <body>
     <div id="products-list">
-        <h2>Escolha o software</h2>
+        <h2>Selecione o produto</h2>
         <input id="search-products" type="search" placeholder="Pesquisar..." onInput="updateResults();">
         <div id="quick-search">
             📌
             <button onClick="setSearch('Windows 8\\.1');">Windows 8.1</button>
             <button onClick="setSearch('Windows 10 22H2');">Windows 10</button>
-            <button onClick="setSearch('Windows 11 23H2');">Windows 11</button>
+            <button onClick="setSearch('24H2');">Windows 11</button>
         </div>
         <table style="table-layout: auto;">
             <thead>
@@ -41,7 +46,7 @@
 
     <div id="msdl-processing-error">
         <h2>Erro</h2>
-        <p>Um erro ocorreu ao processar sua solicitação. Tente novamente.</p>
+        <p>Ocorreu um erro ao processar a sua solicitação. Tente novamente.</p>
     </div>
 
     <div id="back-to-products">
